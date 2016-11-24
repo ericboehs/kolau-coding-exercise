@@ -1,0 +1,5 @@
+if [ $# -eq 0 ]; then
+  rails default
+else
+  rails test $@
+fi
