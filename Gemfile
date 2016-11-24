@@ -8,12 +8,13 @@ gem 'pg',   '~> 0.19.0' # Postgres Database adapter for ActiveRecord
 gem 'puma', '~> 3.6.0'  # Fast, threaded web server
 
 # Assets
-gem 'coffee-rails', '~> 4.2.0'  # Use CoffeeScript for .coffee assets and views
-gem 'jquery-rails', '~> 4.2.0'  # Use jquery as the JavaScript library
-gem 'sass-rails',   '~> 5.0.0'  # Sass CSS Preprocessor
-gem 'slim-rails',   '~> 3.1.0'  # Slim templating langauge
-gem 'turbolinks',   '~> 5.0.0'  # Turbolinks for fast navigation
-gem 'uglifier',     '~> 3.0.0'  # Compressor for JavaScript assets
+gem 'coffee-rails',   '~> 4.2.0'  # Use CoffeeScript for .coffee assets and views
+gem 'jquery-rails',   '~> 4.2.0'  # Use jquery as the JavaScript library
+gem 'sass-rails',     '~> 5.0.0'  # Sass CSS Preprocessor
+gem 'slim-rails',     '~> 3.1.0'  # Slim templating langauge
+gem 'turbolinks',     '~> 5.0.0'  # Turbolinks for fast navigation
+gem 'uglifier',       '~> 3.0.0'  # Compressor for JavaScript assets
+gem 'uikit-on-rails', '~> 1.5.0'  # UIKit - CSS Framework
 
 group :development do
   gem 'listen'                # Enables OS file change event detection without polling

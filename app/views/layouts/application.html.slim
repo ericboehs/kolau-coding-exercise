@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    = csrf_meta_tags
+
+    title = t 'global.app_name'
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body
+    nav.uk-navbar
+      = link_to t('global.app_name'), root_path, class: 'uk-navbar-brand'
+      /- if current_user
+        ul.uk-navbar-nav.uk-navbar-center
+          li class=active_class(appointments_path)
+            = link_to t('nav.appointments'), appointments_path
+
+    .uk-container.uk-container-center.uk-margin-top
+      = yield

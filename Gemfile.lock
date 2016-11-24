@@ -182,6 +182,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.3)
       execjs (>= 0.3.0, < 3)
+    uikit-on-rails (1.5.2)
+      sass-rails (>= 3.1)
     unicode-display_width (1.1.1)
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
@@ -211,6 +213,7 @@ DEPENDENCIES
   spring-watcher-listen
   turbolinks (~> 5.0.0)
   uglifier (~> 3.0.0)
+  uikit-on-rails (~> 1.5.0)
 
 RUBY VERSION
    ruby 2.3.1p112
