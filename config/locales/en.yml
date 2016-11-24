@@ -22,3 +22,8 @@
 en:
   global:
     app_name: Kolau
+
+  appointments:
+    index:
+      empty: "No Appointments! Oh what it must feel like to be you."
+      new: "Add"

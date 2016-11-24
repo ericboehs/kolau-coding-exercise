@@ -1,0 +1,19 @@
+table.uk-table.uk-table-hover.uk-form
+  thead
+    tr
+      th
+      - Date::DAYNAMES.each do |day|
+        th = day
+
+  tbody
+    tr
+      td Start Time
+      - Date::DAYNAMES.each do |day|
+        - appointment = Appointment.find_by day: day
+        td = text_field :appointment, :start_time, value: appointment.start_time, class: 'uk-form-width-small'
+
+    tr
+      td End Time
+      - Date::DAYNAMES.each do |day|
+        - appointment = Appointment.find_by day: day
+        td = text_field :appointment, :end_time, value: appointment.end_time, class: 'uk-form-width-small'
